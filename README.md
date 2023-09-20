@@ -1,4 +1,4 @@
-# Tugas1
+# Tugas2
  1. Alur mengimplementasikan checklist:
     a. Membuat directory baru bernama Tugas1 beserta repositori github
     b. Membuat project django baru dengan nama movie_list dengan command: django-admin startproject movie_list
@@ -23,7 +23,7 @@
 
     Secara umum, perbedaan ketiga design pattern tersebut terdapat pada bagaimana cara menampilkan data pada view. Pada MVC, controller berfungsi sebagai jembatan antara model dan views yang berfungsi untuk menentukan bagaimana data yang di-fetch akan ditampilkan dengan basis logika yang sama. Sementara pada MVVC, basis logika yang digunakan pada server-side dan client-side berbeda. Sedangkan pada MVT view berfungsi sebagai tempat transit bagi data yang kemudian akan ditransfer ke halaman yang sudah ditentukan pada template untuk ditampilkan pada client.
 
-Tugas 3:
+# Tugas 3:
      
      1. Secara umum, perbedaan antara POST dan GET dapat terlihat pada URL. Dimana pada method GET, data akan terlihat pada URL dan sebaliknya pada method POST. Apabila ditinjau dari fungsionalitasnya secara khusus pada django, GET bersifat indempoten sementara POST tidak. Selain itu, dalam melakukan GET request di django tidak diperlukan validasi dan sebaliknya jika menggunakan POST.
 
