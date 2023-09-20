@@ -1,14 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie List Recommendation</title>
-</head>
-<body>
-    <h1>Nama: {{name}}</h1>
-    <h1>Kelas: {{class}}</h1>
-    <h1>App Title: {{app_name}}</h1>
-    
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+...
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Rating</th>
+        <th scope="col">Description</th>
+        <th scope="col">Release Date</th>
+        <th scope="col">Likes</th>
+      </tr>
+
+    {% comment %} Berikut cara memperlihatkan data produk di bawah baris ini {% endcomment %}
+
+    {% for product in products %}
+      <tbody>
+
+            <tr>
+                <td>{{product.movie_name}}</td>
+                <td>{{product.rating}}</td>
+                <td>{{product.description}}</td>
+                <td>{{product.release_date}}</td>
+                <td>{{product.likes}}</td>
+            </tr>
+        </tbody>
+    {% endfor %}
+</table>
+
+<br />
+
+<a href="{% url 'main:create_product' %}">
+    <button>
+        Add New Product
+    </button>
+</a>
+
+{% endblock content %}
