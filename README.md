@@ -32,3 +32,15 @@
      3. Aplikasi modern biasanya memiliki kompleksitas data yang tinggi sehingga dibutuhkan struktur data delivery yang sederhana seperti JSON.
 
      4. Untuk mengimplementasikan checklist diatas, saya membuatnya dengan mengikuti tutorial beserta beberapa sumber lainnya. Hal itu dikarenakan beberapa data yang saya miliki tidak sama strukturnya dengan yang di tutorial sehingga perlu memiliki atribut sendiri dan proses pengolahan sendiri.
+
+# Tugas 4:
+
+1. Django UserCreationForm merupakan salah satu modul autentikasi pada framework django yang berfungsi untuk membuat user baru yang dapat mengakses aplikasi dan terdaftar kedalam sistem admin aplikasi. Menurut saya, kelebihan dari UserCreationForm adalah kemudahan penggunaanya dan memiliki fungsionalitas yang terintegrasi. Akan tetapi, sistem build-in authentication dari module ini terlalu umum yang bahkan bisa diimplementasikan tanpa backend framework seperti menggunakan PHP saja, sehingga apabila menginginkan sistem otentikasi yang khusus, programmer harus mengimplementasikannya sendiri. Selain itu juga tampilan bawaan yang diberikan oleh modul ini sangat polos, sehingga diperlukan styling lebih lanjut di bagian front-end.
+
+2. Autentikasi adalah proses pengidentifikasian tentang siapa pengguna yang akan login, apakah itu betul-betul pemilik akun atau orang lain. Otorisasi adalah proses verifikasi tentang apa yang bisa dilakukan dan diakses oleh seseorang berdasarkan rolenya dalam aplikasi tersebut. Keduanya penting karena autentikasi memastikan bahwa pengguna yang hendak memasuki sebuah akun benar-benar pemilik akun tersebut, otentikasi penting karena dalam aplikasi terdapat aturan dan batasan dari masing-masing user, seperti pengguna tidak bisa mengakses database, tetapi admin bisa mengakses dan memanipulasi database.
+
+3. Cookies adalah sepotong data kecil yang disimpan oleh pengguna web di komputer atau perangkat mereka. Cookies digunakan dalam konteks aplikasi web untuk menyimpan informasi pada sisi klien (pengguna) dan mengirimkannya kembali ke server setiap kali permintaan dibuat. Ini memungkinkan server untuk mengidentifikasi pengguna yang berbeda dan menyimpan data sesi atau informasi lain yang diperlukan. Django menggunakan cookies dengan cara mengaktikan sessions -> mengonfigurasi database untuk menyimpan session -> menyimpan dan mengambil session di views -> Mengatur waktu kadaluarsa dari sebuah session.
+
+4. Tidak, penggunaan cookies secara default tanpa security system yang mendukung sangat rentan akan threat XSS(Cross Site Scripting), sehingga dibutuhkan fitur keamanan lebih lanjut.
+
+5. Cara saya mengimplementasikan checklist diatas adalah dengan mempelajari alur authentication dan sessions di slide PBP. Fitur registrasi , login, dan logout pertama-tama dibuat dengan merancang bagian front-end HTMLnya terlebih dahulu kemudian ditambahkan diintegrasikan dengan fungsi yang dibutuhkan sesuai dengan kebutuhan aplikasi saya. Untuk cookies dan session, diimplementasikan dengan cara yang sudah dijelaskan saat tutorial.
