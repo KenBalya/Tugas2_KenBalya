@@ -50,7 +50,7 @@
 1. Manfaat element selector di CSS adalah untuk memilih elemen-elemen tertentu dengan referensi berupa id atau class. Element selector digunakan apabila programmmer hendak melakukan styling terhadap satu atau lebih elemen pada HTML sehingga sesuai dengan UI design yang diinginkan. Cara paling efektif untuk menggunakan elemen selector adalah menamai elemen-elemen HTML yang akan memiliki desain yang sama dengan nama class yang sama sehingga dapat distyling secara bersamaan pada CSS.
 
 2.Beberapa tag HTML5 dasar yang saya ketahui antara lain:
-- <!-- .... ..> : Tag untuk menambahkan komentar pada HTML seperti tag # pada python
+- Commen Tag : Tag untuk menambahkan komentar pada HTML seperti tag # pada python
 - <a>: Merupakan sebuah hyperlink kepada referensi link/dokumen yang diberikan pada href dari tag tersebut
 - <br>: Menambahkan break-line atau extra-space vertically
 - <div>: Untuk membungkus beberapa komponen, biasanya berfungsi sebagai container dan harus dinamai class-nya jika ingin diedit pada CSS.
