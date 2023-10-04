@@ -51,12 +51,12 @@
 
 2.Beberapa tag HTML5 dasar yang saya ketahui antara lain:
 - Commen Tag : Tag untuk menambahkan komentar pada HTML seperti tag # pada python
-- <a>: Merupakan sebuah hyperlink kepada referensi link/dokumen yang diberikan pada href dari tag tersebut
-- <br>: Menambahkan break-line atau extra-space vertically
-- <div>: Untuk membungkus beberapa komponen, biasanya berfungsi sebagai container dan harus dinamai class-nya jika ingin diedit pada CSS.
-- <button>: Menambahkan elemen tombol
-- <body>: Berisfat seperti div, yaitu sebagai pembungkus dari seluruh elemen yang berada pada inti website itu sendiri.
-- <footer>: Berungsi sebagai pembungkus bagi catatan kaki pada website
+- a: Merupakan sebuah hyperlink kepada referensi link/dokumen yang diberikan pada href dari tag tersebut
+- br: Menambahkan break-line atau extra-space vertically
+- div: Untuk membungkus beberapa komponen, biasanya berfungsi sebagai container dan harus dinamai class-nya jika ingin diedit pada CSS.
+- button: Menambahkan elemen tombol
+- body: Berisfat seperti div, yaitu sebagai pembungkus dari seluruh elemen yang berada pada inti website itu sendiri.
+- footer: Berungsi sebagai pembungkus bagi catatan kaki pada website
 
 3. Margin merupakan ruang/spasi kosong yang berada disekitar elemen, sementara padding merupakan ruang dalam/inner space yang dimiliki oleh suatu elemen.
 
