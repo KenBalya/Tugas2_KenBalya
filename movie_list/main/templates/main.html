@@ -2,31 +2,30 @@
 
 {% block content %}
 ...
-<table class="table">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Rating</th>
-        <th scope="col">Description</th>
-        <th scope="col">Release Date</th>
-        <th scope="col">Likes</th>
-      </tr>
 
     {% comment %} Berikut cara memperlihatkan data produk di bawah baris ini {% endcomment %}
+    <div class="container mx-auto mt-4">
+      <div class="row">
+        {% for product in products %}
+        <div class="col-lg-4 col-sm-6">
+          <div class="card" style="width: 18rem;">
+      <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{product.movie_name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{product.release_date}}</h6>
+        <p class="card-text">{{product.description}}</p>
+           <a href="{% url 'main:edit_product' product.pk %}" class="btn btn-primary">Edit</a>
+        <a href="{% url 'main:delete_product' product.pk %}" class="btn btn-danger"> Delete</a>
+      </div>
+      </div>
+        </div>   
+        {% endfor %}
+    
+      </div>
+    </div>
+    
+   
 
-    {% for product in products %}
-      <tbody>
-
-            <tr>
-                <td>{{product.movie_name}}</td>
-                <td>{{product.rating}}</td>
-                <td>{{product.description}}</td>
-                <td>{{product.release_date}}</td>
-                <td>{{product.likes}}</td>
-            </tr>
-        </tbody>
-    {% endfor %}
-</table>
 
 <br />
 
@@ -35,7 +34,6 @@
         Add New Product
     </button>
 </a>
-<h5>Sesi terakhir login: {{ last_login }}</h5>
 <a href="{% url 'main:logout' %}">
   <button>
       Logout

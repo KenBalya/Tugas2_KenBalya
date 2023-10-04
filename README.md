@@ -44,3 +44,24 @@
 4. Tidak, penggunaan cookies secara default tanpa security system yang mendukung sangat rentan akan threat XSS(Cross Site Scripting), sehingga dibutuhkan fitur keamanan lebih lanjut.
 
 5. Cara saya mengimplementasikan checklist diatas adalah dengan mempelajari alur authentication dan sessions di slide PBP. Fitur registrasi , login, dan logout pertama-tama dibuat dengan merancang bagian front-end HTMLnya terlebih dahulu kemudian ditambahkan diintegrasikan dengan fungsi yang dibutuhkan sesuai dengan kebutuhan aplikasi saya. Untuk cookies dan session, diimplementasikan dengan cara yang sudah dijelaskan saat tutorial.
+
+# Tugas 5:
+
+1. Manfaat element selector di CSS adalah untuk memilih elemen-elemen tertentu dengan referensi berupa id atau class. Element selector digunakan apabila programmmer hendak melakukan styling terhadap satu atau lebih elemen pada HTML sehingga sesuai dengan UI design yang diinginkan. Cara paling efektif untuk menggunakan elemen selector adalah menamai elemen-elemen HTML yang akan memiliki desain yang sama dengan nama class yang sama sehingga dapat distyling secara bersamaan pada CSS.
+
+2.Beberapa tag HTML5 dasar yang saya ketahui antara lain:
+- <!-- .... ..> : Tag untuk menambahkan komentar pada HTML seperti tag # pada python
+- <a>: Merupakan sebuah hyperlink kepada referensi link/dokumen yang diberikan pada href dari tag tersebut
+- <br>: Menambahkan break-line atau extra-space vertically
+- <div>: Untuk membungkus beberapa komponen, biasanya berfungsi sebagai container dan harus dinamai class-nya jika ingin diedit pada CSS.
+- <button>: Menambahkan elemen tombol
+- <body>: Berisfat seperti div, yaitu sebagai pembungkus dari seluruh elemen yang berada pada inti website itu sendiri.
+- <footer>: Berungsi sebagai pembungkus bagi catatan kaki pada website
+
+3. Margin merupakan ruang/spasi kosong yang berada disekitar elemen, sementara padding merupakan ruang dalam/inner space yang dimiliki oleh suatu elemen.
+
+4. Boostrap merupakan sebuah framework yang sudah memiliki fungsionalitas yang dibuat sehingga programmer tinggal mengimplementasikannya. Sementara tailwind memiliki fleksibilitas yang lebih luas untuk pemakaiannya. Boostrap sebaiknya digunakan apabila hendak membuat tampilan website yang konsisten. Tailwind lebih baik digunakan apabila ingin mengimplementaikan desain yang lebih kompleks seperti UI slicing.
+
+5. Cara saya mengimplementasikan checklist diatas adalah dengan membuat cards dari template yang tersedia di google lalu memodelkannya sesuai dengan keinginan pribadi menggunakan boostrap. Setelah itu, fungsionalitas dari komponen-komponen yang sudah ada pada tugas 4 saya sesuaikan dengan komponen baru pada cards, seperti mengedit dan menghapus sebuah film. Untuk navbar sendiri, masih menggunakan bawaan dari boostrap.
+
+

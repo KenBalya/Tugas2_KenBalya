@@ -23,7 +23,6 @@ def show_main(request):
         'name': 'request.user.username',
         'class': 'PBP D',
         'products' : products,
-        'last_login': request.COOKIES['last_login'],
     }
 
     return render(request, "main.html", context)
@@ -86,4 +85,29 @@ def logout_user(request):
     logout(request)
     response = HttpResponseRedirect(reverse('main:login'))
     response.delete_cookie('last_login')
-    return response
+    return response 
+
+def delete_product(request, id):
+    # Get data berdasarkan ID
+    movie = Movie.objects.get(pk = id)
+    # Hapus data
+    movie.delete()
+    # Kembali ke halaman awal
+    return HttpResponseRedirect(reverse('main:show_main'))
+
+def edit_product(request, id):
+    # Get product berdasarkan ID
+    movie = Movie.objects.get(pk = id)
+
+    # Set product sebagai instance dari form
+    form = MovieForm(request.POST or None, instance=movie)
+
+    if form.is_valid() and request.method == "POST":
+        # Simpan form dan kembali ke halaman awal
+        form.save()
+        return HttpResponseRedirect(reverse('main:show_main'))
+
+    context = {'form': form}
+    return render(request, "edit_product.html", context)
+
+
