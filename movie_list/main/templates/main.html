@@ -6,7 +6,7 @@
     {% comment %} Berikut cara memperlihatkan data produk di bawah baris ini {% endcomment %}
     <div class="container mx-auto mt-4">
       <div class="row">
-        {% for product in products %}
+        
         <div class="col-lg-4 col-sm-6">
           <div class="card" style="width: 18rem;">
       <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
@@ -19,11 +19,38 @@
       </div>
       </div>
         </div>   
-        {% endfor %}
+        
     
       </div>
     </div>
     
+    <script>
+      async function getProducts() {
+          return fetch("{% url 'main:get_product_json' %}").then((res) => res.json())
+      }
+      async function refreshProducts() {
+        document.getElementById("product_table").innerHTML = ""
+        const products = await getProducts()
+        let htmlString = `<tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Date Added</th>
+        </tr>`
+        products.forEach((item) => {
+            htmlString += `\n<tr>
+            <td>${item.fields.name}</td>
+            <td>${item.fields.price}</td>
+            <td>${item.fields.description}</td>
+            <td>${item.fields.date_added}</td>
+        </tr>` 
+        })
+        
+        document.getElementById("product_table").innerHTML = htmlString
+    }
+
+    refreshProducts()
+  </script>
    
 
 
