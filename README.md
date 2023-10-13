@@ -64,4 +64,15 @@
 
 5. Cara saya mengimplementasikan checklist diatas adalah dengan membuat cards dari template yang tersedia di google lalu memodelkannya sesuai dengan keinginan pribadi menggunakan boostrap. Setelah itu, fungsionalitas dari komponen-komponen yang sudah ada pada tugas 4 saya sesuaikan dengan komponen baru pada cards, seperti mengedit dan menghapus sebuah film. Untuk navbar sendiri, masih menggunakan bawaan dari boostrap.
 
+# Tugas 6:
+1. Dalam asynchronous programming, proses berjalannya program bisa dilakukan secara bersamaan tanpa menunggu proses antrian, hal inilah yang menyebabkan kita dapat melakukan proses seperti post dan get tanpa terjadi refresh sama sekali. Sebaliknya, synchronous programming merupakan bagian dari asynchronous programming  dimana proses akan dieksekusi secara bersamaan dan untuk hasil tergantung lama proses suatu fungsi synchronous.
+
+2. Konsep event-driven programming pada AJAX mirip dengan event-driven programming pada Java, dimana konsep kerjanya tergantung dari kejadian atau event tertentu. Salah satu penerapannya pada tugas ini adalah ditampilkannya sebuah modal ketika mengklik button.
+
+3. Asynchronous programming pada ajax dapat diterapkan dengan cara membuat XMLHttpRequest membuat callback function, XMLHttpRequest melakukan request ke server, server mengembalikan respon ke halaman web yang kemudian dibaca oleh javascript. Salah satu implementasinya adalah menggunakan fungsi fetch().
+
+4. Fetch API merupakan sebuah metode yang lebih baru dan lebih fleksibel dikarenakan dapat digunakan dengan syntax native javascript, sementara Jquery adalah sebuah framework tersendiri dengan syntax dan semantic tersendiri.
+
+5. Pada tugas ini, saya hanya berhasil mengimplementasikan get method karena terdapat kendali dengan penyesuaian tipe data yang tersimpan di database dan belum dapat menyelesaikannya hingga deadline.
+
 
